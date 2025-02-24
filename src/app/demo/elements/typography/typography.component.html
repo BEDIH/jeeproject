@@ -1,0 +1,74 @@
+<h2>Patients</h2>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr style="background-color: #f2f2f2;">
+      <th>ID</th>
+      <th>Prénom</th>
+      <th>Nom</th>
+      <th>Email</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PAT001</td>
+      <td>Jean</td>
+      <td>Dupont</td>
+      <td>jean.dupont&#64;email.com</td>
+      <td>
+        <button onclick="modifierPatient('PAT001')" 
+                style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; cursor: pointer; border-radius: 5px;">
+          Modifier
+        </button>
+        <button onclick="supprimerPatient('PAT001')" 
+                style="background-color: #f44336; color: white; border: none; padding: 8px 12px; cursor: pointer; border-radius: 5px;">
+          Supprimer
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>PAT002</td>
+      <td>Marie</td>
+      <td>Curie</td>
+      <td>marie.curie&#64;email.com</td>
+      <td>
+        <button onclick="modifierPatient('PAT002')" 
+                style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; cursor: pointer; border-radius: 5px;">
+          Modifier
+        </button>
+        <button onclick="supprimerPatient('PAT002')" 
+                style="background-color: #f44336; color: white; border: none; padding: 8px 12px; cursor: pointer; border-radius: 5px;">
+          Supprimer
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>PAT003</td>
+      <td>Albert</td>
+      <td>Einstein</td>
+      <td>albert.einstein&#64;email.com</td>
+      <td>
+        <button onclick="modifierPatient('PAT003')" 
+                style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; cursor: pointer; border-radius: 5px;">
+          Modifier
+        </button>
+        <button onclick="supprimerPatient('PAT003')" 
+                style="background-color: #f44336; color: white; border: none; padding: 8px 12px; cursor: pointer; border-radius: 5px;">
+          Supprimer
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<script>
+  function modifierPatient(id) {
+    alert('Modifier le patient ' + id);
+  }
+
+  function supprimerPatient(id) {
+    if (confirm('Voulez-vous vraiment supprimer le patient ' + id + ' ?')) {
+      alert('Patient ' + id + ' supprimé.');
+    }
+  }
+</script>

@@ -1,0 +1,66 @@
+<h2>Médicaments</h2>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr style="background-color: #f2f2f2;">
+      <th>ID</th>
+      <th>Nom</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MED001</td>
+      <td>Paracétamol</td>
+      <td>
+        <button onclick="modifierMedicament('MED001')" 
+                style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; cursor: pointer; border-radius: 5px;">
+          Modifier
+        </button>
+        <button onclick="supprimerMedicament('MED001')" 
+                style="background-color: #f44336; color: white; border: none; padding: 8px 12px; cursor: pointer; border-radius: 5px;">
+          Supprimer
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>MED002</td>
+      <td>Ibuprofène</td>
+      <td>
+        <button onclick="modifierMedicament('MED002')" 
+                style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; cursor: pointer; border-radius: 5px;">
+          Modifier
+        </button>
+        <button onclick="supprimerMedicament('MED002')" 
+                style="background-color: #f44336; color: white; border: none; padding: 8px 12px; cursor: pointer; border-radius: 5px;">
+          Supprimer
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>MED003</td>
+      <td>Amoxicilline</td>
+      <td>
+        <button onclick="modifierMedicament('MED003')" 
+                style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; cursor: pointer; border-radius: 5px;">
+          Modifier
+        </button>
+        <button onclick="supprimerMedicament('MED003')" 
+                style="background-color: #f44336; color: white; border: none; padding: 8px 12px; cursor: pointer; border-radius: 5px;">
+          Supprimer
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<script>
+  function modifierMedicament(id) {
+    alert('Modifier le médicament ' + id);
+  }
+
+  function supprimerMedicament(id) {
+    if (confirm('Voulez-vous vraiment supprimer le médicament ' + id + ' ?')) {
+      alert('Médicament ' + id + ' supprimé.');
+    }
+  }
+</script>
