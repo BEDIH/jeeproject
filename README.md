@@ -49,4 +49,4 @@ Le backend génère un JWT lors de l’authentification réussie.
 
 3️⃣ Utilisation du token pour les requêtes sécurisées
 Le token JWT est utilisé dans l’en-tête des requêtes HTTP sous la forme d’un Bearer token pour accéder aux ressources protégées.
->>>>>>> 1dc7c75d03a896d5823fe4129d37178d62f30734
+
